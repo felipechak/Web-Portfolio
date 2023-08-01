@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c0b9dd;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 6vh;
+}
+.section-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 10vw;
+
+}
+h2{
+    font-size: 3vh;
+}
+.section-icon{
+    fill:#383B53;
+    height: 5vh;
+    margin-right: 1vh;
+    padding: 0px;
+}
+#portfolio{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    background-color: #383b53;
+}
+#portfolio section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+#education, #experience{
+    background-color: #78c091;
+    color: #383B53;
+}
+#skills{
+    background-color: #C0B9DD;
+    color: #383B53;
+}
