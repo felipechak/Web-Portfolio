@@ -30,14 +30,15 @@ h2{
 }
 .list-container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: center ;
     margin-top: 10px;
 }
 .list-item{
     border-bottom: 1px solid #383b53;
     padding-left: 20px;
-    padding: 10px 0 10px 0;
     width: 90vw;
     height: 15vh;
     display: flex;
@@ -45,6 +46,9 @@ h2{
 }
 .list-item:hover{
     background-color: rgba(0,0,0,0.1);
+}
+.list-container .list-item:first-child{
+    padding: 10px 0 10px 0;
 }
 .list-item-icon img{
     height: 50%;
@@ -68,7 +72,7 @@ h2{
 #intro{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center; 
     background-color: #383b53;
 }
@@ -81,11 +85,17 @@ h2{
     scroll-snap-align: start;
 }
 
-#education, #experience, #hard-skills{
+#education, #experience{
     background-color: #78c091;
     color: #383B53;
 }
-#soft-skills{
+#skills{
     background-color: #C0B9DD;
     color: #383B53;
 }
+
+@media only screen and (max-width: 1000px) {
+    h2{
+        font-size: 15px;
+    }
+  }
