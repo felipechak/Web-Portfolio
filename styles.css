@@ -37,16 +37,22 @@ h2{
 .list-item{
     border-bottom: 1px solid #383b53;
     padding-left: 20px;
-    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
     width: 90vw;
     height: 15vh;
     display: flex;
     flex-direction: row;
 }
+.list-item:hover{
+    background-color: rgba(0,0,0,0.1);
+}
 .list-item-icon img{
-    height: 90%;
+    height: 50%;
 }
 .list-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     flex-basis: 10vw;
 }
@@ -75,11 +81,11 @@ h2{
     scroll-snap-align: start;
 }
 
-#education, #experience{
+#education, #experience, #hard-skills{
     background-color: #78c091;
     color: #383B53;
 }
-#skills{
+#soft-skills{
     background-color: #C0B9DD;
     color: #383B53;
 }
