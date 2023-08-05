@@ -10,6 +10,38 @@ body{
 h1{
     font-size: 6vh;
 }
+.terminal {
+    width: 500px; /* Adjust the width to your preference */
+    padding: 10px;
+    background-color: #2E2E33; /* Terminal border color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+  }
+
+  .command-line {
+    padding: 5px;
+  }
+
+  .input-line {
+    color: #FFD700; /* Input text color */
+  }
+
+  .output-line {
+    color: #00FF00; /* Output text color */
+  }
+  .output-line::after{
+    content: "■";
+    animation: blink 1.2s infinite;
+ }
+ @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  .error-line {
+    color: #FF0000; /* Error text color */
+  }
 .section-title{
     display: flex;
     flex-direction: row;
@@ -37,9 +69,9 @@ h2{
     margin-top: 10px;
 }
 .list-item{
-    border-bottom: 1px solid #383b53;
+    border-bottom: 1px solid #383b5317;
     padding-left: 20px;
-    width: 90vw;
+    width: 45vw;
     height: 15vh;
     display: flex;
     flex-direction: row;
@@ -51,7 +83,7 @@ h2{
     padding: 10px 0 10px 0;
 }
 .list-item-icon img{
-    height: 50%;
+    height: 60%;
 }
 .list-item-icon {
     display: flex;
