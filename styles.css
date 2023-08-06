@@ -11,7 +11,7 @@ h1{
     font-size: 6vh;
 }
 .terminal {
-    width: 500px; /* Adjust the width to your preference */
+    width: 70vw; /* Adjust the width to your preference */
     padding: 10px;
     background-color: #2E2E33; /* Terminal border color */
     border-radius: 5px;
@@ -46,13 +46,15 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin: 10px 0 10px 0;
     height: 10vh;
     width: 90vw;
 
 }
 h2{
     font-size: 3vh;
+    margin-top: 0    ;
 }
 .section-icon{
     fill:#383B53;
@@ -71,16 +73,11 @@ h2{
 .list-item{
     border-bottom: 1px solid #383b5317;
     padding-left: 20px;
-    width: 45vw;
+    margin-bottom: 10px;
+    width: 48vw;
     height: 15vh;
     display: flex;
     flex-direction: row;
-}
-.list-item:hover{
-    background-color: rgba(0,0,0,0.1);
-}
-.list-container .list-item:first-child{
-    padding: 10px 0 10px 0;
 }
 .list-item-icon img{
     height: 60%;
@@ -95,6 +92,19 @@ h2{
 .list-item-description{
     padding-left: 15px;
     flex-grow: 2;
+    /*margin-bottom: 10px;*/
+}
+.jobexplist{
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.jobexpitem{
+    width: 96vw;
+    height: 35vh;
+}
+#top-navbar{
+    display: none;
 }
 #portfolio{
     height: 100vh;
@@ -129,5 +139,28 @@ h2{
 @media only screen and (max-width: 1000px) {
     h2{
         font-size: 15px;
+    }
+    p, li{
+        font-size: 12px;
+    }
+    .list-container{
+        flex-direction: column;
+    }
+    .list-item{
+        width: 96vw;
+        height: 10vh;
+        justify-content: flex-start;
+    }
+    .list-item-icon img{
+        height: 35%;
+    }
+    .jobexpitem{
+        width: 96vw;
+        height: 25vh;
+    }.section-icon{
+        height: 2.5vh;
+    }
+    #portfolio section{
+        padding-bottom: 10vh;
     }
   }

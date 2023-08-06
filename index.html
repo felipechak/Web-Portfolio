@@ -7,6 +7,13 @@
     <title>Felipe Pacin</title>
 </head>
 <body>
+    <div id="top-navbar">
+        <ul>
+            <li>Skills</li>
+            <li>Job experience</li>
+            <li>Contact</li>
+        </ul>
+    </div>
     <article id="portfolio">
         <section id="intro">
             <h1>Felipe Pacin</h1>
@@ -20,7 +27,7 @@
         <section id="skills">
             <div class="section-title">
                 <img src="img/soft-icon.svg" class="section-icon"></svg>
-                <h2 class="subtitle">Soft skills</h2>
+                <h2 class="subtitle">Communication skills</h2>
             </div>
             <div class="list-container">
                 <div class="list-item">
@@ -40,23 +47,50 @@
                         <img src="img/phone-icon.svg" alt="">
                     </div>
                     <div class="list-item-description">
-                        <h2 class="list-item-title">Support via phone and chat</h2>
+                        <h2 class="list-item-title">Support via phone, email and chat</h2>
                         <p>3 years of experience</p>
                     </div>
                 </div>
             </div>
             <div class="section-title">
                 <img src="img/skills-icon.svg" class="section-icon"></svg>
-                <h2 class="subtitle">Hard skills</h2>
+                <h2 class="subtitle">Technical skills</h2>
             </div>
             <div class="list-container">
                 <div class="list-item">
                     <div class="list-item-icon">
+                        <img src="img/html-logo.svg" alt="">
+                    </div>
+                    <div class="list-item-description">
+                        <h2 class="list-item-title">HTML5 and CSS3</h2>
+                        <p>5 years learning, skills implemented on this site</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item-icon">
+                        <img src="img/node-logo.svg" alt="">
+                    </div>
+                    <div class="list-item-description">
+                        <h2 class="list-item-title">Node.js</h2>
+                        <p>3 years learning</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item-icon">
                         <img src="img/python-logo.svg" alt="">
                     </div>
                     <div class="list-item-description">
                         <h2 class="list-item-title">Python</h2>
                         <p>3 years learning, 1 year of experience</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item-icon">
+                        <img src="img/powerapps-logo.svg" alt="">
+                    </div>
+                    <div class="list-item-description">
+                        <h2 class="list-item-title">Power Platform</h2>
+                        <p>1 year of experience, using mainly Power Apps and Power Automate</p>
                     </div>
                 </div>
                 <div class="list-item">
@@ -68,24 +102,7 @@
                         <p>3 years of experience</p>
                     </div>
                 </div>
-                <div class="list-item">
-                    <div class="list-item-icon">
-                        <img src="img/python-logo.svg" alt="">
-                    </div>
-                    <div class="list-item-description">
-                        <h2 class="list-item-title">Python</h2>
-                        <p>3 years learning, 1 year of experience</p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-icon">
-                        <img src="img/excel-logo.svg" alt="">
-                    </div>
-                    <div class="list-item-description">
-                        <h2 class="list-item-title">Excel</h2>
-                        <p>3 years of experience</p>
-                    </div>
-                </div>
+            
             </div>
         </section>
         <section id="experience">
@@ -93,7 +110,32 @@
                 <img src="img/experience-icon.svg" class="section-icon"></svg>
                 <h2 class="subtitle">Job Experience</h2>
             </div>
+            <div class="list-container jobexplist">
+                <div class="list-item jobexpitem">
+                    <div class="list-item-description">
+                        <h2 class="list-item-title"><strong>IT Trainee</strong> at TATA Consultancy Services</h2>
+                        <p>Working since 2020. In the first two years I did mostly contact center tasks which hugely developed my communication skills. In the last year started to participate in developing small automation for agilizing backoffice processes, for this I used mainly Alteryx, Google Script and the Power Platform</p>
+                    </div>
+                </div>
+                <div class="list-item jobexpitem">
+                    <div class="list-item-description">
+                        <h2 class="list-item-title">Node.js</h2>
+                        <p>3 years learning</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </article>
+    <script>
+        const scrollDemo = document.querySelector("#portfolio");
+
+        scrollDemo.addEventListener('scroll', ( ) => {
+            console.log(scrollDemo.scrollTop);
+        }); 
+        /* setInterval(()=>{
+            console.log(window.scrollY)
+        },500) */
+        console.log("hola")
+    </script>
 </body>
 </html>
