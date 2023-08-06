@@ -7,11 +7,14 @@
     <title>Felipe Pacin</title>
 </head>
 <body>
-    <div id="navigation">
-        <a href="#">Job Experience</a>
-        <a href="#">Skills</a>
-        <a href="#">Education</a>
-        <a href="#">Contact</a>
+    <div id="nav-container">
+        <div id="navigation">
+            <a class="navigation-link" href="#intro">Home</a>
+            <a class="navigation-link" href="#experience">Job Experience</a>
+            <a class="navigation-link" href="#skills">Skills</a>
+            <a class="navigation-link" href="#">Education</a>
+            <a class="navigation-link" href="#">Contact</a>
+        </div>
     </div>
     <article id="portfolio">
         <section id="intro">
@@ -21,7 +24,13 @@
                   <span class="input-line">$</span>
                   <span class="output-line">Web development and backoffice solutions</span>
                 </div>
-              </div>
+            </div>
+            <div id="intro-nav">
+                <a class="navigation-link" href="#experience">Job Experience</a>
+                <a class="navigation-link" href="#skills">Skills</a>
+                <a class="navigation-link" href="#">Education</a>
+                <a class="navigation-link" href="#">Contact</a>
+            </div>
         </section>
         <section id="skills">
             <div class="section-title">
@@ -126,18 +135,24 @@
         </section>
     </article>
     <script>
-        const scrollDemo = document.querySelector("#portfolio");
+        document.addEventListener("DOMContentLoaded", ()=>{
+            console.log(window.innerWidth)
+            document.querySelector("#portfolio").scrollTop = 0;
+        });
+        
+            const scrollDemo = document.querySelector("#portfolio");
 
-        scrollDemo.addEventListener('scroll', ( ) => {
-            console.log(scrollDemo.scrollTop);
-            if(scrollDemo.scrollTop > 0){
-                document.querySelector("#navigation").style.display = "flex"
-                document.querySelector("#portfolio").style.height = "95vh"
-            }else{
-                document.querySelector("#navigation").style.display = "none"
-                document.querySelector("#portfolio").style.height = "100    vh"
-            }
-        }); 
+            scrollDemo.addEventListener('scroll', ( ) => {
+                if(window.innerWidth > 1000){
+                    console.log(scrollDemo.scrollTop);
+                    if(scrollDemo.scrollTop > 0){
+                        document.querySelector("#nav-container").style.display = "block"
+                    }else{
+                        document.querySelector("#nav-container").style.display = "none"
+                    }
+                }
+            });
+         
         /* setInterval(()=>{
             console.log(window.scrollY)
         },500) */

@@ -1,6 +1,18 @@
 *{
     box-sizing: border-box;
 }
+#portfolio::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #portfolio {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #c0b9dd;
@@ -103,22 +115,44 @@ h2{
     width: 96vw;
     height: 35vh;
 }
-#navigation{
+#nav-container{
     position: fixed;
+    top: -15px;
+    right: 5vh;
+    display: none;
+    opacity: 0.2;
+    width: 30vw;
+    border-radius: 20px;
+    height: 5vh;
+    transition: opacity 0.5s;
+    background-color: #383B53;
+}
+#nav-container:hover{
+    opacity: 1;
+}
+#intro-nav{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 100vw;
+    width: 70%;
     height: 5vh;
-    background-color: #383B53;
 }
-#navigation a{
+#navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.navigation-link{
+    height: 100%;
     padding: 20px 20px 5px 20px;
     text-decoration: none;
     color: #c0b9dd;
 }
-#navigation a:hover{
+.navigation-link:hover{
     background-color: rgba(255,255,255,0.1);
 }
 #portfolio{
@@ -174,6 +208,14 @@ h2{
         height: 25vh;
     }.section-icon{
         height: 2.5vh;
+    }
+    #intro-nav{
+        padding-top: 50px;
+        flex-direction: column;
+        height: 30vh;
+    }
+    .navigation-link{
+        height: 30%;
     }
     #portfolio section{
         padding-bottom: 10vh;
