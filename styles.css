@@ -99,6 +99,7 @@ h2{
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 20vw ;
     flex-basis: 10vw;
 }
 .list-item-description{
@@ -160,13 +161,25 @@ h2{
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
-#intro{
+#intro, #contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     background-color: #383b53;
 }
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+#contact form input, textarea{
+    width: 50vw;
+}
+#contact form label, #contact form input{
+    padding: 10px;
+    margin: 10px;
+} 
 #portfolio section{
     height: 100%;
     display: flex;
@@ -197,11 +210,20 @@ h2{
     }
     .list-item{
         width: 96vw;
-        height: 10vh;
+        height: 8vh;
+        padding: 0;
         justify-content: flex-start;
     }
     .list-item-icon img{
         height: 35%;
+    }
+    .list-item-description ul{
+        margin:0;
+        /*margin-bottom: 10px;*/
+    }
+    .list-item-description h2{
+        margin-bottom: 2px;
+        /*margin-bottom: 10px;*/
     }
     .jobexpitem{
         width: 96vw;

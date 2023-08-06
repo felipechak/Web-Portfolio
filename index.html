@@ -29,7 +29,7 @@
                 <a class="navigation-link" href="#experience">Job Experience</a>
                 <a class="navigation-link" href="#skills">Skills</a>
                 <a class="navigation-link" href="#">Education</a>
-                <a class="navigation-link" href="#">Contact</a>
+                <a class="navigation-link" href="#contact">Contact</a>
             </div>
         </section>
         <section id="skills">
@@ -110,7 +110,15 @@
                         <p>3 years of experience</p>
                     </div>
                 </div>
-            
+                <div class="list-item">
+                    <div class="list-item-icon">
+                        <img src="img/c-logo.svg" alt="">
+                    </div>
+                    <div class="list-item-description">
+                        <h2 class="list-item-title">C Language</h2>
+                        <p>2 years learning, passed "Programming II" college course from FING-UDELAR where I learned the basics about memory allocation and Abstract Data Types</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="experience">
@@ -125,13 +133,29 @@
                         <p>Working since 2020. In the first two years I did mostly contact center tasks which hugely developed my communication skills. In the last year started to participate in developing small automation for agilizing backoffice processes, for this I used mainly Alteryx, Google Script and the Power Platform</p>
                     </div>
                 </div>
-                <div class="list-item jobexpitem">
-                    <div class="list-item-description">
-                        <h2 class="list-item-title">Node.js</h2>
-                        <p>3 years learning</p>
-                    </div>
-                </div>
             </div>
+        </section>
+        <section id="contact">
+            <div class="section-title">
+                <img src="img/experience-icon.svg" class="section-icon"></svg>
+                <h2 class="subtitle">Contact</h2>
+            </div>
+            <p>Please feel free to email me at <a href="mailto:felipepacin7@gmail.com">felipepacin7@gmail.com</a> or send me a message through the form below</p>
+            <form action="/submit_contact_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="subject">Contact phone (optional):</label>
+                <input type="text" id="subject" name="subject">
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </article>
     <script>
