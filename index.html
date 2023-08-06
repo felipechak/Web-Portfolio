@@ -7,12 +7,11 @@
     <title>Felipe Pacin</title>
 </head>
 <body>
-    <div id="top-navbar">
-        <ul>
-            <li>Skills</li>
-            <li>Job experience</li>
-            <li>Contact</li>
-        </ul>
+    <div id="navigation">
+        <a href="#">Job Experience</a>
+        <a href="#">Skills</a>
+        <a href="#">Education</a>
+        <a href="#">Contact</a>
     </div>
     <article id="portfolio">
         <section id="intro">
@@ -131,6 +130,13 @@
 
         scrollDemo.addEventListener('scroll', ( ) => {
             console.log(scrollDemo.scrollTop);
+            if(scrollDemo.scrollTop > 0){
+                document.querySelector("#top-navbar").style.display = "flex"
+                document.querySelector("#portfolio").style.height = "95vh"
+            }else{
+                document.querySelector("#top-navbar").style.display = "none"
+                document.querySelector("#portfolio").style.height = "100    vh"
+            }
         }); 
         /* setInterval(()=>{
             console.log(window.scrollY)
