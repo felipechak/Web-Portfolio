@@ -131,10 +131,10 @@
         scrollDemo.addEventListener('scroll', ( ) => {
             console.log(scrollDemo.scrollTop);
             if(scrollDemo.scrollTop > 0){
-                document.querySelector("#top-navbar").style.display = "flex"
+                document.querySelector("#navigation").style.display = "flex"
                 document.querySelector("#portfolio").style.height = "95vh"
             }else{
-                document.querySelector("#top-navbar").style.display = "none"
+                document.querySelector("#navigation").style.display = "none"
                 document.querySelector("#portfolio").style.height = "100    vh"
             }
         }); 

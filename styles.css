@@ -103,7 +103,7 @@ h2{
     width: 96vw;
     height: 35vh;
 }
-#top-navigation{
+#navigation{
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -113,12 +113,12 @@ h2{
     height: 5vh;
     background-color: #383B53;
 }
-#top-navigation a{
+#navigation a{
     padding: 20px 20px 5px 20px;
     text-decoration: none;
     color: #c0b9dd;
 }
-#top-navigation a:hover{
+#navigation a:hover{
     background-color: rgba(255,255,255,0.1);
 }
 #portfolio{
